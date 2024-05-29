@@ -15,3 +15,5 @@ Imports:
     rio,
     sf,
     dplyr
+URL: https://github.com/Issengard83/xlsx2geojson
+BugReports: https://github.com/Issengard83/xlsx2geojson/issues
