@@ -18,7 +18,7 @@ excel_to_geojson <- function(data){
     # clean column names
     dplyr::rename_with(~ make.unique(.)) |>
     janitor::clean_names() |>
-    dplyr::rename_with(dplyr::contains("geom"), ~ "geometry") |>
+    dplyr::rename_with(.cols = dplyr::contains("geom"), .fn = ~ "geometry") |>
     # transform to spatial object
     dplyr::mutate(geometry = sf::st_as_sfc(geometry, GeoJSON = TRUE)) |>
     sf::st_as_sf(sf_column_name = "geometry")
