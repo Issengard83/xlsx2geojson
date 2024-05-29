@@ -1,0 +1,17 @@
+Package: xlsx2geojson
+Title: Easily Transform Excel Files with GeoJson Geometries to Shapefiles
+Version: 0.0.0.9000
+Authors@R: 
+    person("Tamara", "Ricardo", , "tamararicardo83@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-0921-2611"))
+Description: This package was developed in order to convert Excel Files with GeoJson geometries to spatial shapefiles.
+License: CC BY 4.0
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
+LazyData: true
+Imports:
+    janitor,
+    rio,
+    sf,
+    dplyr
